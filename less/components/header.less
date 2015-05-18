@@ -1,0 +1,113 @@
+.page-header {
+    height: 70px;
+    background: #2c2c2c;
+    color: #fff;
+
+    &__inner {
+        .clearfix();
+    }
+}
+
+.page-logo {
+    font: normal @font-size-h4/70px @font-family-bold;
+    float: left;
+}
+
+.main-nav {
+    float: right;    
+
+    &__btn {
+        cursor: pointer;
+        display: none;
+    }
+
+    &__list {
+        .clearfix();
+    }
+
+    &__item {
+        float: left;
+        padding: 18px 0px;
+        margin-left: 10px;
+
+        & a {
+            display: block;
+            text-decoration: none;
+            line-height: 32px;
+            color: #fff;
+            border: solid 1px #2c2c2c;
+            padding: 0px 10px;
+
+            &:hover {
+                border-top: solid 1px #fff;
+                border-bottom: solid 1px #fff;
+            }
+        }
+    }
+
+    &--item-active {
+        & a {
+            border: solid 1px #fff;
+        }
+    }
+}
+
+.scrollTop {
+    display: block;
+    width: 42px;
+    height: 26px;
+    position: fixed;
+    bottom: 22px;
+    right: 30px;
+    z-index: 999;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .main-nav {
+        &__btn {
+            width: 31px;
+            height: 29px;
+            display: block;
+            margin-top: 20px;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        .scrollTop {
+            right: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .page-header {
+        height: 50px;
+    }
+    
+    .page-logo {
+        font-size: @font-size-base;
+        line-height: 50px;
+    }
+    
+    .main-nav {
+        &__btn {
+            width: 25px;
+            height: 24px;
+            display: block;
+            margin-top: 13px;
+        }
+
+        &__list {
+            display: none;
+        }
+    }
+
+    .scrollTop {
+        width: 32px;
+        height: 20px;
+        bottom: 15px;
+        right: 24px;
+    }
+}

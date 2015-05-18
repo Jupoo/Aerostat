@@ -1,0 +1,50 @@
+.reviews {
+    &__slider-item {
+        text-align: center;
+    }
+
+    &__slider-img {
+        width: 98px;
+        height: 98px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        -moz-border-radius: 49px;
+        -webkit-border-radius: 49px;
+        -khtml-border-radius: 49px;
+        border-radius: 49px;
+
+        & img {
+            width: 98px;
+        }
+    }
+
+    &__name {
+        color: #353535;
+        font: normal @font-size-h4 @font-family-bold;
+        margin-top: 20px;
+    }
+
+    &__text {
+        color: #353535;
+        font-style: italic;
+        line-height: @line-height-base;
+        margin-top: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .reviews {
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .faq {
+        display: none;
+    }
+
+    .reviews {
+        margin-top: 20px;
+    }
+}

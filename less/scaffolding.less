@@ -1,0 +1,188 @@
+html, body {
+  	padding: 0;
+  	margin: 0;
+  	width: 100%;
+  	height: 100%;
+  	min-width: 1200px;
+}
+
+body {
+  	font: normal @font-size-base/@line-height-normal @font-family-base;
+  	background-color: @body-bg;
+  	color: @text-color;
+}
+
+.page-content {
+    width: 100%;
+}
+
+.page-content-inner {
+	 width: 1140px;
+	 margin: 0 auto;
+}
+
+.padd-bott-100 {
+  	padding-bottom: 100px;
+}
+
+.row {
+	margin: 0px -18px;
+  	.clearfix();
+
+	&__col {
+		float: left;
+		padding: 0px 18px;
+		box-sizing: border-box;
+	}
+}
+
+.page-title {
+  	font-family: @font-family-bold;
+	font-size: @font-size-h1;
+  	line-height: @font-size-h1;
+  	padding-bottom: 19px;
+  	margin-bottom: 50px;
+  	position: relative;
+
+  	&__line {
+	  	width: 62px;
+	  	height: 6px;
+	  	position: absolute;
+	  	bottom: 0px;
+	  	left: 0px;
+	  	background: #3e98d7;
+	}
+
+  	&--marg-bott-min {
+	  	margin-bottom: 40px;
+	}
+  	&--marg-bott-max {
+	  	margin-bottom: 60px;
+	}
+
+  	&--padd-top {
+	  	padding-top: 95px;
+	}
+
+  	&--center {
+	  	text-align: center;
+	}
+
+	&--center &__line {
+		left: 50%;
+		margin-left: -31px;
+	}
+}
+
+a {
+	color: #444;
+
+  	&:hover {
+	  	color: #3e98d7;
+	}
+}
+
+p {
+  	line-height: @line-height-middle;
+  	padding-bottom: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.border-top {
+  	border-top: solid 1px #ccc;
+}
+
+.clearfix {
+  	.clearfix();
+}
+
+.right {
+  	float: right;
+}
+
+.left {
+  	float: left;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	html, body {
+	  	min-width: 768px;
+	}
+
+	.page-content-inner {
+		  width: 718px;
+	}
+
+	.row {
+		&__col.adaptive {
+			float: none;
+			width: 100%;
+		}
+
+		&__col.adaptive--50 {
+		  	float: left;
+		  	width: 50%;
+		}
+
+		&__col.adaptive--100 {
+			float: left;
+			width: 100%;
+		}
+	}
+
+	.border-top {
+	  	border-top: none;
+	}
+
+	.padd-bott-100 {
+	  	padding-bottom: 50px;
+	}
+
+	.page-title {
+		&--padd-top {
+		  	padding-top: 35px;
+		}
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+	html, body {
+	  min-width: 360px;
+	}
+
+	.page-content-inner {
+		  width: 312px;
+		  
+		  &.adaptive {
+          width: 100%;
+      }
+	}
+
+	.row {
+		&__col.adaptive {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.padd-bott-100 {
+	  	padding-bottom: 50px;
+	}
+
+	.page-title {
+		font-size: ceil(@font-size-h1 * 0.875);
+		line-height: ceil(@font-size-h1 * 0.875);
+
+		&--padd-top {
+		  	padding-top: 50px;
+		}
+	}
+
+	.border-top {
+	  	border-top: none;
+	}
+}

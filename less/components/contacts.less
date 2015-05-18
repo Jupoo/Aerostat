@@ -1,0 +1,241 @@
+.contacts {
+    width: 100%;
+    height: 393px;
+    background: url("../img/contacts_bg.jpg") no-repeat center 0px;
+    padding-top: 55px;
+    position: relative;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &__corner {
+        width: 50%;
+        position: absolute;
+        top: 0px;
+
+        & svg {
+            vertical-align: top;
+        }
+    }
+
+    &--corner-l {
+        left: 0px;
+    }
+
+    &--corner-r {
+        right: 0px;
+    }
+
+    &__icon {
+        width: 62px;
+        height: 62px;
+        background: #1c5978;
+        text-align: center;
+        margin: 0 auto;
+
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    &__icon svg {
+        width: 41px;
+        height: 62px;
+    }
+
+    &__title {
+        font: normal @font-size-h2 @font-family-bold;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    &__title-min {
+        color: #616161;
+        font-style: italic;
+        text-align: center;
+    }
+
+    &__item {
+        .clearfix();
+        margin-top: 58px;
+    }
+
+    &__item-icon {
+        width: 35px;
+        height: 50px;
+        float: left;
+    }
+
+    &__item-info {
+        margin-left: 23px;
+        float: left;
+    }
+
+    &__item-title {
+        color: #2b2b2b;
+        font: normal @line-height-base/((@line-height-base + 4)) @font-family-bold;
+    }
+
+    &__item-address {
+        color: #525252;
+        font-size: @font-size-normal;
+        font-style: italic;
+        line-height: @font-size-normal + 4;
+        margin-top: 10px;
+    }
+
+    &__item-phone {
+        color: #292929;
+        font: normal @font-size-h2 @font-family-bold;
+        margin-top: 7px;
+    }
+
+    &__links {
+        margin-top: 58px;
+    }
+
+    &__mail {
+        .clearfix();
+    }
+
+    &__mail-icon {
+        float: left;
+        width: 23px;
+        height: 22px;
+        line-height: 22px;
+
+        & svg {
+            height: 22px;
+            width: 23px;
+        }
+    }
+
+    &__mail-link {
+        float: left;
+        margin-left: 23px;
+        font-size: @font-size-h4;
+        line-height: 22px;
+        display: block;
+    }
+
+    &__socials {
+        .clearfix();
+        margin-top: 26px;
+    }
+
+    &__social-link {
+        width: 22px;
+        height: 23px;
+        float: left;
+        display: block;
+        text-decoration: none;
+        margin-right: 22px;
+
+        &:hover {
+            background-position: 0px -23px;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &--social-vk {
+        background: url("../img/icon_vk.png") no-repeat 0px 0px;
+    }
+
+    &--social-fb {
+        background: url("../img/icon_fb.png") no-repeat 0px 0px;
+    }
+
+    &--social-ig {
+        background: url("../img/icon_ig.png") no-repeat 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .contacts {
+        height: 445px;
+        background: url("../img/contacts_bg_2.jpg") no-repeat center 0px;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        &__item {
+            margin-top: 40px;
+        }
+
+        &__item-info {
+            margin-left: 20px;
+        }
+
+        &__links {
+            margin-top: 45px;
+            .clearfix();
+        }
+
+        &__mail {
+            float: left;
+        }
+
+        &__socials {
+            float: right;
+            margin-top: 0px;
+        }
+
+        &__item-phone {
+            color: #525252;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .contacts {
+        height: 684px;
+        background: url("../img/contacts_bg_3.jpg") no-repeat center 0px;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        &__title {
+            font: normal @font-size-h4 @font-family-bold;
+        }
+
+        &__item {
+            margin-top: 50px;
+        }
+
+        &__item-title {
+            max-width: 254px;
+        }
+
+        &__item-phone {
+            color: #525252;
+        }
+
+        &__links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        &__mail-link {
+            margin-left: 26px;
+        }
+
+        &__socials {
+            display: inline-block;
+            margin-top: 31px;
+        }
+
+        &__mail {
+            display: inline-block;
+        }
+    }
+}
