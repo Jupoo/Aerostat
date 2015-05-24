@@ -208,4 +208,47 @@ $(document).ready( function() {
 		}
 		$(window).scroll( function(){show_scrollTop()} ); show_scrollTop();
 	});
+
+	//Плавная прокрутка до якоря
+	$(document).on('click', '.js-ancLinks', function () {
+		$(".main-nav__item").removeClass("main-nav--item-active");
+		var data_link=$(this).closest(".main-nav__item").attr("data-link");
+		$(".main-nav__item[data-link='"+data_link+"']").addClass("main-nav--item-active");
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top;//минус высота шапки
+		$("html,body").animate({scrollTop: destination},500);
+		return false;
+	});
+
+	//Select
+	$(document).on("click", ".form-item__select-text", function () {
+		var wrap=$(this).closest(".form-item__select");
+		if(wrap.find(".form-item__select-list").hasClass("block")) {
+			wrap.find(".form-item__select-list").removeClass("block");
+		}
+		else {
+			$(".form-item__select-list").removeClass("block");
+			wrap.find(".form-item__select-list").addClass("block");
+		}
+	});
+
+	$(document).on("click", ".form-item__select-option", function () {
+		$(this).closest(".form-item__select-list").find(".form-item__select-option").removeClass("current");
+		$(this).addClass("current");
+		$(this).closest(".form-item__select").find(".form-item__select-text").text($(this).text());
+		$(this).closest(".form-item__select-list").removeClass("block");
+	});
+
+	//Клик вне поиска
+	if ($(".form-item__select").length) {
+		$(document).click(function (e) {
+			if ($(e.target).closest(".form-item__select").length) {
+				return;
+			}
+			else {
+				$(".form-item__select-list").removeClass("block");
+			}
+			e.stopPropagation();
+		});
+	}
 });

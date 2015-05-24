@@ -18,9 +18,10 @@
 .clearfix() {
   	&:before,
   	&:after {
-	    content: " "; // 1
-	    display: table; // 2
+	    content: " ";
+	    display: table;
   	}
+
   	&:after {
     	clear: both;
   	}
@@ -44,16 +45,3 @@
   	border-bottom-left-radius: @border-radius-base;
     border-top-left-radius: @border-radius-base;
 }
-
-//Кнопки
-/*.btn-hover-bg (@color) {
-	background: lighten(@color, 5.4%);// ~ #addf7a
-}
-.btn-active-bg (@color) {
-  	background: darken(@color, 1.5%);// ~ #9cd066
-}
-.btn-hover-shadow (@color) {
-	-moz-box-shadow: 0px 3px 0px lighten(@color, 5.4%);// ~ #95cb5c
-	-webkit-box-shadow: 0px 3px 0px lighten(@color, 5.4%);
-	box-shadow: 0px 3px 0px lighten(@color, 3.8%);
-}*/

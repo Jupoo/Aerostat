@@ -1,5 +1,5 @@
 .page-header {
-    height: 70px;
+    //height: 70px;
     background: #2c2c2c;
     color: #fff;
 
@@ -11,10 +11,15 @@
 .page-logo {
     font: normal @font-size-h4/70px @font-family-bold;
     float: left;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 280px;
 }
 
 .main-nav {
-    float: right;    
+    float: right;
+    max-width: 860px;
 
     &__btn {
         cursor: pointer;
@@ -23,6 +28,7 @@
 
     &__list {
         .clearfix();
+        max-width: 860px;
     }
 
     &__item {
@@ -39,8 +45,11 @@
             padding: 0px 10px;
 
             &:hover {
-                border-top: solid 1px #fff;
-                border-bottom: solid 1px #fff;
+                //border-top: solid 1px #fff;
+                //border-bottom: solid 1px #fff;
+                background: #fff;
+                color: #2c2c2c;
+                border: solid 1px #fff;
             }
         }
     }
@@ -64,6 +73,8 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .main-nav {
+        max-width: 438px;
+
         &__btn {
             width: 31px;
             height: 29px;
@@ -83,7 +94,7 @@
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
     .page-header {
-        height: 50px;
+        //height: 50px;
     }
     
     .page-logo {
@@ -92,6 +103,8 @@
     }
     
     .main-nav {
+        max-width: 32px;
+
         &__btn {
             width: 25px;
             height: 24px;

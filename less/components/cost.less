@@ -34,10 +34,10 @@
         height: 40px;
         width: 356px;
         line-height: 40px;
+        font-size: @font-size-small;
         box-sizing: border-box;
-        padding-left: 10px;
-        padding-right: 25px;
         position: relative;
+        text-align: left;
 
         -moz-border-radius: @border-radius-base;
         -webkit-border-radius: @border-radius-base;
@@ -45,11 +45,55 @@
         border-radius: @border-radius-base;
     }
 
+    &__select-text {
+        height: 38px;
+        padding-left: 10px;
+        padding-right: 25px;
+        cursor: pointer;
+    }
+
+    &__select-list {
+        width: 100%;
+        border: solid 1px #d5d5d5;
+        position: absolute;
+        top: 40px;
+        background: #fff;
+        z-index: 1;
+        box-sizing: border-box;
+        display: none;
+        overflow: hidden;
+
+        -moz-border-radius: @border-radius-base;
+        -webkit-border-radius: @border-radius-base;
+        -khtml-border-radius: @border-radius-base;
+        border-radius: @border-radius-base;
+
+        &.block {
+            display: block;
+        }
+    }
+
+    &__select-option {
+        padding: 0px 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: #46b0dc;
+            background: #f9f9f9;
+        }
+
+        &.current {
+            background: #46b0dc;
+            color: #fff;
+        }
+    }
+
     &__select-icon {
         position: absolute;
         top: 0px;
         right: 10px;
         height: 38px;
+        cursor: pointer;
 
         & svg {
             height: 38px;
@@ -89,6 +133,18 @@
                 border: solid 2px #aed6ff;
                 padding-left: 37px;
                 padding-right: 9px;
+            }
+
+            &:-moz-placeholder {
+                line-height: normal;
+                font-size: @font-size-small;
+                color: #d5d5d5;
+            }
+
+            &::-webkit-input-placeholder {
+                line-height: normal;
+                font-size: @font-size-small;
+                color: #d5d5d5;
             }
         }
     }
@@ -178,7 +234,7 @@
             margin: 0 auto;
             box-sizing: border-box;
 
-            moz-border-radius: @border-radius-base;
+            -moz-border-radius: @border-radius-base;
             -webkit-border-radius: @border-radius-base;
             -khtml-border-radius: @border-radius-base;
             border-radius: @border-radius-base;

@@ -3,19 +3,19 @@
     <head>
         <title>Aerostat</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
 		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     </head>
     <body>
 		<header class="page-header">
 			<div class="page-content-inner">
 				<div class="page-header__inner">
-					<div class="page-logo">Монгольфьеркин и КО</div>
+					<a href="/" class="page-logo">Монгольфьеркин и КО</a>
 					<nav class="main-nav">
 						<div class="main-nav__btn">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 31 29" enable-background="new 0 0 31 29" xml:space="preserve">
-								<g id="Forma_1">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 31 29" enable-background="new 0 0 31 29" xml:space="preserve">
+								<g>
 									<g>
 										<path fill="#EBEBEB" d="M30,0H1C0.4,0,0,0.4,0,1v4.3c0,0.5,0.4,1,1,1h29c0.6,0,1-0.4,1-1V1C31,0.4,30.5,0,30,0z M30,11.4H1    c-0.6,0-1,0.4-1,1v4.3c0,0.5,0.4,1,1,1h29c0.6,0,1-0.4,1-1v-4.3C31,11.8,30.5,11.4,30,11.4z M30,22.7H1c-0.6,0-1,0.4-1,1V28    c0,0.5,0.4,1,1,1h29c0.6,0,1-0.4,1-1v-4.3C31,23.2,30.5,22.7,30,22.7z"/>
 									</g>
@@ -23,12 +23,12 @@
 							</svg>
 						</div>
 						<ul class="main-nav__list">
-							<li class="main-nav__item main-nav--item-active"><a href="">Кто мы</a></li>
-							<li class="main-nav__item"><a href="">Фотографии</a></li>
-							<li class="main-nav__item"><a href="">План полета</a></li>
-							<li class="main-nav__item"><a href="">Заказать</a></li>
-							<li class="main-nav__item"><a href="">Команда</a></li>
-							<li class="main-nav__item"><a href="">Контакты</a></li>
+							<li class="main-nav__item main-nav--item-active" data-link="about"><a href="#about" class="js-ancLinks">Кто мы</a></li>
+							<li class="main-nav__item" data-link="gallery"><a href="#gallery" class="js-ancLinks">Фотографии</a></li>
+							<li class="main-nav__item" data-link="flying"><a href="#flying" class="js-ancLinks">План полета</a></li>
+							<li class="main-nav__item" data-link="cost"><a href="#cost" class="js-ancLinks">Заказать</a></li>
+							<li class="main-nav__item" data-link="team"><a href="#team" class="js-ancLinks">Команда</a></li>
+							<li class="main-nav__item" data-link="contacts"><a href="#contacts" class="js-ancLinks">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -45,8 +45,8 @@
 					<div class="greeting__btn">
 						<span>Подробнее</span>
 						<div class="greeting__btn-arrow">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 18 29" enable-background="new 0 0 18 29" xml:space="preserve">
-								<g id="Forma_1">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 18 29" enable-background="new 0 0 18 29" xml:space="preserve">
+								<g>
 									<g>
 										<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M17.6,19.1c-0.5-0.5-1.3-0.5-1.8,0l-5.6,5.6V1.3    C10.3,0.6,9.7,0,9,0C8.3,0,7.7,0.6,7.7,1.3v23.5l-5.6-5.6c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l7.7,7.7    c0.5,0.5,1.3,0.5,1.8,0l7.7-7.7c0.2-0.2,0.4-0.6,0.4-0.9C18,19.7,17.9,19.4,17.6,19.1z"/>
 									</g>
@@ -56,25 +56,25 @@
 					</div>
 				</div>
 				<div class="greeting__corner greeting--corner-l">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_21_xA0_Изображение_1_" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
-						<image overflow="visible" width="800" height="121" id="Layer_21_xA0_Изображение" xlink:href="data:image/png;base64,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">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
+						<image overflow="visible" width="800" height="121" xlink:href="data:image/png;base64,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">
 						</image>
 					</svg>
 				</div>
 				<div class="greeting__corner greeting--corner-r">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_21_xA0_Изображение_1_" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
-						<image overflow="visible" width="800" height="121" id="Layer_21_xA0_Изображение" xlink:href="data:image/png;base64,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 128AAAAASUVORK5CYII=">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
+						<image overflow="visible" width="800" height="121" xlink:href="data:image/png;base64,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 128AAAAASUVORK5CYII=">
 						</image>
 					</svg>
 				</div>
 			</section>
-			<section class="advantages padd-bott-100">
+			<div class="advantages">
 				<div class="page-content-inner">
 					<div class="advantages__wrap">
 						<div class="advantages__item">
 							<div class="advantages__item-img advantages--img-1">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 56 58" enable-background="new 0 0 56 58" xml:space="preserve">
-									<g id="Forma_1">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 56 58" enable-background="new 0 0 56 58" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#D83A3A" d="M54.2,28.3c-1.9-1.8-4.5-2.2-6.9-2.6c-0.4-0.1-0.7-0.1-1.1-0.2    c-0.3-0.1-0.6-0.1-0.9-0.2c-3.1-0.7-5.3-1.4-5.3-3.9c0-1.6,0.5-3.2,1.1-4.8c0.7-1.9,1.4-3.8,1.2-6c-0.2-4-1.9-7.4-4.6-9.3    C36.7,0.5,35.3,0,34,0c-2,0-3.4,1.1-4,2.9c-0.4,1.2-0.4,2.5-0.3,3.7c0,0.3,0,0.6,0,1c0.1,1.8-0.1,3.2-0.7,4.6    c-1,2.8-3,5.3-4.6,7.3l-0.9,1.1c-1.2,1.5-2.5,3.1-4,4.4c-0.7,0.6-1.5,0.8-2.5,1C16.9,26,0,26.2,0,26.2v24.5c0,0,13.2,0,14-0.1    c0.7,0,1.3-0.1,1.9-0.1h0.3c0.5,0.1,1.1,0.2,1.7,0.2c0.5,0.1,1,0.1,1.6,0.2c0.6,0.1,1.3,0.7,1.9,1.3c0.4,0.3,0.7,0.7,1.1,0.9    c0.4,0.2,0.7,0.5,1.1,0.8c1.1,0.8,2.2,1.6,3.5,2.1c1.6,0.7,3.3,0.9,5,1.1c0.8,0.1,1.6,0.2,2.4,0.4c0.5,0.1,0.9,0.1,1.4,0.2    c1.3,0.1,2.7,0.3,4,0.3c0.9,0,1.7-0.1,2.5-0.2c2.7-0.8,4.4-2.9,4.4-5.4c1.4-0.5,2.6-1.7,3.3-3.1c0.7-1.3,0.9-2.7,0.7-3.9    c2.6-1.7,3.9-4.8,3.2-7.5c1.1-0.8,1.9-2.1,2.2-3.7C56.3,32.1,55.6,29.8,54.2,28.3z M52.4,33.2c-0.1,0.8-0.4,1.7-1.6,1.9    c-0.6,0.2-1,0.5-1.2,1c-0.2,0.6-0.2,1.4,0.2,2c0.4,0.5,0.5,1.5,0.2,2.4c-0.3,1.1-1.1,1.8-2.3,2.2c-0.5,0.1-1,0.4-1.2,1    c-0.3,0.6-0.2,1.3,0.2,1.8c0.3,0.5,0.3,1.6-0.2,2.5c-0.4,0.7-0.9,1.1-1.4,1.1c-0.1,0-0.1,0-0.2,0l-0.1,0h-0.1    c-0.6,0-1.5,0.3-1.9,0.9c-0.3,0.4-0.3,0.9-0.1,1.4c0.3,0.7,0.2,1.4-0.1,2c-0.2,0.4-0.6,0.6-1.1,0.7c-0.9,0.2-1.7,0.2-2.6,0.2    c-2.5-0.2-5.2-0.5-7.8-0.9l-1.2-0.3c-0.6-0.1-1.3-0.3-1.8-0.4c-0.9-0.4-2-1.2-3-2c-0.3-0.2-0.7-0.5-1-0.7    c-0.2-0.2-0.5-0.4-0.7-0.7c-0.7-0.6-1.4-1.3-2.3-1.5c-0.9-0.5-1.8-0.5-2.5-0.5c-2.4-0.2-3.5-1.1-4.1-3.2c-0.6-2.1-0.6-4.5-0.6-6.6    l0-0.5c0-2,0-4.4,1.1-6.2c0.5-0.8,1.5-1,2.7-1.2c1.6-0.3,2.9-0.8,4.1-1.7c0.2-0.1,0.3-0.2,0.5-0.4c0.5-0.3,0.9-0.8,1.2-1.2    c1.9-2,3.7-4.2,5-6.1c0.3-0.5,0.6-0.9,1-1.4c1.5-2.1,3-4.2,3.6-6.8c0.5-1.9,0.4-3.6,0.3-5.6l0-0.3c-0.1-1.2-0.1-2.5,0.6-2.6    c0,0,0.1,0,0.2,0c1.1,0,2.5,1.4,3.4,2.7c0.9,1.6,1.3,3.4,1.3,4.9c0,1.6-0.6,3.2-1.1,4.8c-0.7,1.9-1.4,3.9-1.2,6.1    c0.2,2.9,2.6,5.5,5.9,6.3c1,0.2,2,0.4,3,0.6c1.8,0.3,3.7,0.6,5.3,1.5C51.5,30.8,52.6,31.9,52.4,33.2z"/>
 										</g>
@@ -85,8 +85,8 @@
 						</div>
 						<div class="advantages__item advantages--item-top-40">
 							<div class="advantages__item-img advantages--img-2">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 75 28" enable-background="new 0 0 75 28" xml:space="preserve">
-									<g id="Forma_1">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 75 28" enable-background="new 0 0 75 28" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#D83A3A" d="M74.3,9.3h-1.4c0-0.1,0-0.2-0.1-0.3c-1.5-5.1-6.1-7.3-10-8    c-1.7-0.5-5.2-0.7-9.9-0.7V0H22.5v0.3c-4.8,0-8.5,0.2-10.2,0.7C8.3,1.7,3.7,4,2.2,9c0,0.1,0,0.2-0.1,0.3H0.7C0.3,9.3,0,9.6,0,10.1    v1.3c0,0.4,0.3,0.8,0.7,0.8h1.2c0.1,3.3,0.9,8.1,3.5,11.6c3,2.8,6.1,4.2,9.9,4.2c6.4,0,13-4,15.1-7.5c1.5-2.4,3-5,3.7-6.8l0.1-0.3    c0.2-0.7,0.5-1.1,0.6-1.7C35,10.9,35,10,35,9.1h5c0,0.9,0,1.8,0.1,2.5c0.1,0.6,0.4,1,0.6,1.7l0.1,0.3c0.6,1.8,2.2,4.4,3.7,6.8    C46.7,24,53.2,28,59.7,28c3.8,0,6.9-1.4,9.9-4.2c2.6-3.5,3.4-8.3,3.5-11.6h1.2c0.4,0,0.7-0.3,0.7-0.8v-1.3    C75,9.6,74.7,9.3,74.3,9.3z M43.9,2.2L41,4.4c-0.3,0.4-0.5,1.1-0.7,1.9h-5.7c-0.2-0.8-0.4-1.5-0.7-1.9l-2.9-2.2    C30.9,2.2,30,1.5,29.2,1h16.6C45,1.5,44.1,2.2,43.9,2.2z"/>
 										</g>
@@ -94,8 +94,8 @@
 								</svg>
 							</div>
 							<div class="advantages__item-img advantages--img-5">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 34 34" enable-background="new 0 0 34 34" xml:space="preserve">
-									<g id="Forma_1">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 34 34" enable-background="new 0 0 34 34" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#D83A3A" d="M17,0C7.6,0,0,7.6,0,17c0,9.4,7.6,17,17,17c9.4,0,17-7.6,17-17    C34,7.6,26.4,0,17,0z M30.5,14.3c0,0.6-0.4,1.1-1,1.1c-0.6,0-1.1-0.4-1.1-1c0-0.6,0.4-1.1,1-1.1C30,13.3,30.5,13.7,30.5,14.3z     M4.1,10.5C6.5,5.8,11.4,2.6,17,2.6c5.8,0,10.7,3.4,13,8.2c0.3,0.7,0,1.5-0.8,1.8c-1.3,0.4-3.4,1-4.9,1.4    c-0.8,0.2-1.7-0.3-2.2-0.9c-1.2-1.4-3-2.3-5.1-2.3c-1.9,0-3.5,0.7-4.8,2c-0.6,0.6-0.9,1.1-1,1.1c0,0-0.1,0-0.1,0s-4.1-1-6.4-1.6    C4.1,12,3.8,11.2,4.1,10.5z M27,15.4c0,0.6-0.4,1.1-1,1.1c-0.6,0-1.1-0.4-1.1-1c0-0.6,0.4-1.1,1-1.1C26.5,14.4,27,14.8,27,15.4z     M9.5,15.6c0,0.6-0.5,1-1.1,1c-0.6,0-1-0.5-1-1.1c0-0.6,0.5-1,1.1-1C9.1,14.5,9.6,15,9.5,15.6z M6.1,14.4c0,0.6-0.5,1-1.1,1    c-0.6,0-1-0.5-1-1.1c0-0.6,0.5-1,1.1-1C5.7,13.4,6.1,13.9,6.1,14.4z M14,31.1C7.5,29.7,2.6,23.9,2.6,17c0-0.1,0-0.2,0-0.2    c0-0.1,0.7-0.2,1.4-0.1c1.3,0.2,3.3,0.6,4.8,0.9c0.8,0.2,1.4,0.9,1.6,1.7c0.5,1.9,1.8,3.5,3.5,4.4c0.7,0.4,1.3,1.1,1.3,1.9    c0,1.3,0,3.1,0,4.4C15.4,30.7,14.7,31.3,14,31.1z M18,29.7c-0.2,0.5-0.8,0.9-1.3,0.7c-0.6-0.2-0.9-0.8-0.7-1.3    c0.2-0.5,0.8-0.9,1.3-0.7C17.9,28.6,18.2,29.2,18,29.7z M18.2,26.1c-0.2,0.5-0.8,0.9-1.3,0.7c-0.6-0.2-0.9-0.7-0.7-1.3    c0.2-0.5,0.8-0.9,1.3-0.7C18.1,24.9,18.4,25.5,18.2,26.1z M20.2,31.1c-0.8,0.2-1.4-0.4-1.4-1.2c0-1.3,0-3.1,0-4.4    c0-0.8,0.6-1.6,1.3-1.9c1.7-0.9,3-2.5,3.5-4.4c0.2-0.8,0.8-1.5,1.6-1.7c1.5-0.3,3.5-0.7,4.8-0.9c0.8-0.1,1.4,0,1.4,0.1    c0,0.1,0,0.2,0,0.2C31.6,23.9,26.7,29.7,20.2,31.1z"/>
 										</g>
@@ -106,8 +106,8 @@
 						</div>
 						<div class="advantages__item advantages--item-top-40">
 							<div class="advantages__item-img advantages--img-3">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 65 50" enable-background="new 0 0 65 50" xml:space="preserve">
-									<g id="Forma_1">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 65 50" enable-background="new 0 0 65 50" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#D83A3A" d="M58.5,9.4h-7.8c-1.1,0-2.2-0.8-2.6-1.8l-2-5.8    c-0.3-1-1.5-1.8-2.6-1.8H21.5c-1.1,0-2.2,0.8-2.6,1.8l-2,5.8c-0.3,1-1.5,1.8-2.6,1.8H6.5C2.9,9.4,0,12.2,0,15.6v28.1    C0,47.2,2.9,50,6.5,50h52c3.6,0,6.5-2.8,6.5-6.2V15.6C65,12.2,62.1,9.4,58.5,9.4z M32.5,43.7c-9,0-16.3-7-16.3-15.6    c0-8.6,7.3-15.6,16.3-15.6c9,0,16.2,7,16.2,15.6C48.7,36.8,41.5,43.7,32.5,43.7z M56.2,20C55,20,54,19,54,17.8    c0-1.2,1-2.2,2.3-2.2c1.3,0,2.3,1,2.3,2.2C58.5,19,57.5,20,56.2,20z M32.5,18.7c-5.4,0-9.8,4.2-9.8,9.4c0,5.2,4.4,9.4,9.8,9.4    c5.4,0,9.8-4.2,9.8-9.4C42.2,22.9,37.9,18.7,32.5,18.7z"/>
 										</g>
@@ -118,8 +118,8 @@
 						</div>
 						<div class="advantages__item">
 							<div class="advantages__item-img advantages--img-4">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 72 34" enable-background="new 0 0 72 34" xml:space="preserve">
-									<g id="Forma_1">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 72 34" enable-background="new 0 0 72 34" xml:space="preserve">
+									<g>
 										<g>
 											<path fill="#D83A3A" d="M49.7,1c-1.4-0.4-3.1-0.8-4.9-1c-1.2,1.7-6,2.9-8.8,2.9h0c-2.8,0-7.7-1.2-8.8-2.9c-1.8,0.3-3.4,0.6-4.9,1    c6.4,2.4,11,8.8,11,16.2c0,3.1-0.8,5.9-2.1,8.4h9.6c-1.4-2.5-2.1-5.4-2.1-8.4C38.7,9.8,43.3,3.5,49.7,1z M15.6,1.8    C7,1.8,0,9,0,17.9S7,34,15.6,34s15.6-7.2,15.6-16.1S24.3,1.8,15.6,1.8z M15.6,28.1c-5.4,0-9.9-4.6-9.9-10.2    c0-5.6,4.4-10.2,9.9-10.2c5.4,0,9.9,4.6,9.9,10.2C25.5,23.5,21.1,28.1,15.6,28.1z M9.3,12.8c-2.1,2.9-2,6.8,0.2,9.4    c-0.8-2.7-0.3-5.7,1.4-8.1c1.8-2.4,4.5-3.6,7.2-3.5C15.2,9.1,11.4,9.9,9.3,12.8z M56.4,1.8c-8.6,0-15.6,7.2-15.6,16.1    S47.7,34,56.4,34C65,34,72,26.8,72,17.9S65,1.8,56.4,1.8z M56.4,28.1c-5.4,0-9.9-4.6-9.9-10.2c0-5.6,4.4-10.2,9.9-10.2    c5.4,0,9.9,4.6,9.9,10.2C66.2,23.5,61.8,28.1,56.4,28.1z M53.8,10.6c2.7-0.1,5.4,1.1,7.2,3.5c1.8,2.4,2.2,5.4,1.4,8.1    c2.2-2.6,2.4-6.6,0.2-9.4C60.6,9.9,56.8,9.1,53.8,10.6z"/>
 										</g>
@@ -130,28 +130,29 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<section class="about padd-bott-100">
+			<section class="about padd-bott-100 page-title--padd-top" id="about">
 				<div class="page-content-inner">
 					<div class="row">
 						<div class="row__col row--col-12-4 adaptive">
-							<h2 class="page-title page-title--marg-bott-min">Вкратце<div class="page-title__line"></div></h2>
+							<h2 class="page-title page-title--marg-bott-min">Вкратце<span class="page-title__line"></span></h2>
 							<p>Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга.</p>
 							<p>Мы предлагаем полетать с нами!</p>
 						</div>
 						<div class="row__col row--col-12-8 adaptive">
 							<div class="video">
-								<img src="img/video_img.jpg" alt="video" />
+								<iframe src="https://player.vimeo.com/video/16115723" width="748" height="344" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<!--<img src="img/video_img.jpg" alt="video" />
 								<div class="video__control">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_3_1_" opacity="0.5" x="0px" y="0px" viewBox="0 0 92 106" enable-background="new 0 0 92 106" xml:space="preserve">
-										<g id="Polygon_3">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" opacity="0.5" x="0px" y="0px" viewBox="0 0 92 106" enable-background="new 0 0 92 106" xml:space="preserve">
+										<g>
 											<g>
 												<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="0,0 0,106 92,53   "/>
 											</g>
 										</g>
 									</svg>
-								</div>
+								</div>-->
 								<div class="video__shadow">
 									<div class="video__shadow-bg"></div>
 								</div>
@@ -161,10 +162,10 @@
 				</div>
 			</section>
 
-			<section class="gallery padd-bott-100">
+			<section class="gallery" id="gallery">
 				<div class="page-content-inner adaptive">
 					<div class="border-top">
-						<h2 class="page-title page-title--marg-bott-min page-title--padd-top page-title--center">Галерея<div class="page-title__line"></div></h2>
+						<h2 class="page-title page-title--marg-bott-min page-title--padd-top page-title--center">Галерея<span class="page-title__line"></span></h2>
 						<div class="slider-gall">
 							<div class="bxslider">
 								<div class="slider-gall__item">
@@ -188,15 +189,15 @@
 				</div>
 			</section>
 
-			<section class="flying">
+			<section class="flying" id="flying">
 				<div class="page-content-inner">
-					<h2 class="page-title page-title--marg-bott-min page-title--center">Как проходят полеты<div class="page-title__line"></div></h2>
+					<h2 class="page-title page-title--marg-bott-min page-title--center page-title--padd-top">Как проходят полеты<span class="page-title__line"></span></h2>
 					<div class="flying__wrap">
 						<div class="flying__item flying--item-top-max">
 							<div class="flying__item-text">Взлет</div>
 							<div class="flying__item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_copy_1_" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
-									<g id="Forma_1_copy">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#E45C5C" d="M37.4,5.1C27.1-3.4,7.2-1.4,1.5,12C-3.6,24.3,5.2,36.2,14,44.1    v6.1h-2V65h20.2V50.3H30v-6.1c5.7-5.1,11.1-11.4,13.2-18.9C45.3,18,43.2,9.9,37.4,5.1z M26.3,50.3h-8.6v-3h8.6V50.3z"/>
 										</g>
@@ -206,10 +207,10 @@
 							</div>
 						</div>
 						<div class="flying__item flying--item-top-min">
-							<div class="flying__item-text">Набираем<span>&nbsp</span>высоту</div>
+							<div class="flying__item-text">Набираем<span>&nbsp;</span>высоту</div>
 							<div class="flying__item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_copy_1_" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
-									<g id="Forma_1_copy">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#E45C5C" d="M37.4,5.1C27.1-3.4,7.2-1.4,1.5,12C-3.6,24.3,5.2,36.2,14,44.1    v6.1h-2V65h20.2V50.3H30v-6.1c5.7-5.1,11.1-11.4,13.2-18.9C45.3,18,43.2,9.9,37.4,5.1z M26.3,50.3h-8.6v-3h8.6V50.3z"/>
 										</g>
@@ -221,8 +222,8 @@
 						<div class="flying__item">
 							<div class="flying__item-text">Летаем</div>
 							<div class="flying__item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_copy_1_" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
-									<g id="Forma_1_copy">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#E45C5C" d="M37.4,5.1C27.1-3.4,7.2-1.4,1.5,12C-3.6,24.3,5.2,36.2,14,44.1    v6.1h-2V65h20.2V50.3H30v-6.1c5.7-5.1,11.1-11.4,13.2-18.9C45.3,18,43.2,9.9,37.4,5.1z M26.3,50.3h-8.6v-3h8.6V50.3z"/>
 										</g>
@@ -234,8 +235,8 @@
 						<div class="flying__item flying--item-top-middle">
 							<div class="flying__item-text">Снижаемся</div>
 							<div class="flying__item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_copy_1_" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
-									<g id="Forma_1_copy">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#E45C5C" d="M37.4,5.1C27.1-3.4,7.2-1.4,1.5,12C-3.6,24.3,5.2,36.2,14,44.1    v6.1h-2V65h20.2V50.3H30v-6.1c5.7-5.1,11.1-11.4,13.2-18.9C45.3,18,43.2,9.9,37.4,5.1z M26.3,50.3h-8.6v-3h8.6V50.3z"/>
 										</g>
@@ -247,8 +248,8 @@
 						<div class="flying__item flying--item-top-max">
 							<div class="flying__item-text">Садимся</div>
 							<div class="flying__item-img">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_copy_1_" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
-									<g id="Forma_1_copy">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 44 65" enable-background="new 0 0 44 65" xml:space="preserve">
+									<g>
 										<g>
 											<path fill-rule="evenodd" clip-rule="evenodd" fill="#E45C5C" d="M37.4,5.1C27.1-3.4,7.2-1.4,1.5,12C-3.6,24.3,5.2,36.2,14,44.1    v6.1h-2V65h20.2V50.3H30v-6.1c5.7-5.1,11.1-11.4,13.2-18.9C45.3,18,43.2,9.9,37.4,5.1z M26.3,50.3h-8.6v-3h8.6V50.3z"/>
 										</g>
@@ -272,11 +273,11 @@
 				</div>
 			</section>
 
-			<section class="cost padd-bott-100">
+			<section class="cost padd-bott-100" id="cost">
 				<div class="page-content-inner">
 					<div class="row">
 						<div class="row__col row--col-12-6 adaptive cost__info-wrap">
-							<h2 class="page-title page-title--marg-bott-min page-title--padd-top">Рассчитать стоимость<div class="page-title__line"></div></h2>
+							<h2 class="page-title page-title--marg-bott-min page-title--padd-top">Рассчитать стоимость<span class="page-title__line"></span></h2>
 							<div class="cost__info">
 								<p class="italic">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
 								<p class="italic">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p>
@@ -284,28 +285,20 @@
 							</div>
 						</div>
 						<div class="row__col row--col-12-6 adaptive cost__form-wrap">
-							<form action="" method="" name="cost_calculation_form" class="page-title--padd-top cost__form">
-								<div class="form-item">
-									<div class="form-item__title">Маршрут полета:</div>
-									<div class="form-item__select">
-										<div class="form-item__select-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_1_1_" x="0px" y="0px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-												<g id="Polygon_1">
-													<g>
-														<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" points="0,0 5.5,10 11,0   "/>
-													</g>
-												</g>
-											</svg>
-										</div>
-									</div>
-								</div>
-								<div class="clearfix">
-									<div class="form-item left">
-										<div class="form-item__title">Количество человек:</div>
-										<div class="form-item__select form-item--w98">
+							<div class="page-title--padd-top cost__form">
+								<form action="index.html" method="post" name="cost_calculation_form">
+									<div class="form-item">
+										<div class="form-item__title">Маршрут полета:</div>
+										<div class="form-item__select">
+											<div class="form-item__select-text">Маршрут 1</div>
+											<ul class="form-item__select-list">
+												<li class="form-item__select-option current">Маршрут 1</li>
+												<li class="form-item__select-option">Маршрут 2</li>
+												<li class="form-item__select-option">Маршрут 3</li>
+											</ul>
 											<div class="form-item__select-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_1_1_" x="0px" y="0px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-													<g id="Polygon_1">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" points="0,0 5.5,10 11,0   "/>
 														</g>
@@ -314,57 +307,85 @@
 											</div>
 										</div>
 									</div>
-									<div class="form-item right">
-										<div class="form-item__title form-item--w116">Из них дети:</div>
-										<div class="form-item__select form-item--w98">
-											<div class="form-item__select-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_1_1_" x="0px" y="0px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-													<g id="Polygon_1">
+									<div class="clearfix">
+										<div class="form-item left">
+											<div class="form-item__title">Количество человек:</div>
+											<div class="form-item__select form-item--w98">
+												<div class="form-item__select-text">1</div>
+												<ul class="form-item__select-list">
+													<li class="form-item__select-option current">1</li>
+													<li class="form-item__select-option">2</li>
+													<li class="form-item__select-option">3</li>
+												</ul>
+												<div class="form-item__select-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
 														<g>
-															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" points="0,0 5.5,10 11,0   "/>
+															<g>
+																<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" points="0,0 5.5,10 11,0   "/>
+															</g>
+														</g>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="form-item right">
+											<div class="form-item__title form-item--w116">Из них дети:</div>
+											<div class="form-item__select form-item--w98">
+												<div class="form-item__select-text">0</div>
+												<ul class="form-item__select-list">
+													<li class="form-item__select-option current">0</li>
+													<li class="form-item__select-option">1</li>
+													<li class="form-item__select-option">2</li>
+												</ul>
+												<div class="form-item__select-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+														<g>
+															<g>
+																<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" points="0,0 5.5,10 11,0   "/>
+															</g>
+														</g>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-item">
+										<div class="form-item__title">Имя и фамилия:</div>
+										<div class="form-item__input">
+											<input type="text" value="" placeholder="Поля Фокус" class="focus" />
+											<div class="form-item__input-icon form-item--icon-name">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+													<g>
+														<g>
+															<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" d="M7.5,7.5c2.1,0,3.8-1.7,3.8-3.8C11.2,1.7,9.6,0,7.5,0    C5.4,0,3.8,1.7,3.8,3.8C3.8,5.8,5.4,7.5,7.5,7.5z M7.5,9.4C5,9.4,0,10.6,0,13.1V15h15v-1.9C15,10.6,10,9.4,7.5,9.4z"/>
 														</g>
 													</g>
 												</svg>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="form-item">
-									<div class="form-item__title">Имя и фамилия:</div>
-									<div class="form-item__input">
-										<input type="text" value="Поля Фокус" class="focus" />
-										<div class="form-item__input-icon form-item--icon-name">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-												<g id="Forma_1">
+									<div class="form-item">
+										<div class="form-item__title">Телефон:</div>
+										<div class="form-item__input">
+											<input type="text" value="" placeholder="89215674566" />
+											<div class="form-item__input-icon form-item--icon-phone">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
 													<g>
-														<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" d="M7.5,7.5c2.1,0,3.8-1.7,3.8-3.8C11.2,1.7,9.6,0,7.5,0    C5.4,0,3.8,1.7,3.8,3.8C3.8,5.8,5.4,7.5,7.5,7.5z M7.5,9.4C5,9.4,0,10.6,0,13.1V15h15v-1.9C15,10.6,10,9.4,7.5,9.4z"/>
+														<g>
+															<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" d="M18.5,14.3L14.6,12h0c-0.1-0.1-0.3-0.1-0.5-0.1    c-0.3,0-0.6,0.1-0.8,0.3l-1.1,1.2c0,0-0.1,0-0.1,0.1s-0.1,0-0.1,0l-0.3-0.1c-0.2,0-0.4-0.1-0.7-0.3c-0.3-0.2-0.7-0.4-1.2-0.8    c-0.5-0.3-1-0.8-1.6-1.4c-0.6-0.6-1.1-1.1-1.4-1.6C6.3,8.9,6,8.5,5.9,8.2c-0.2-0.4-0.3-0.7-0.4-1c0,0,0-0.1,0-0.2    c0-0.1,0-0.1,0.1-0.1l1-1c0.2-0.2,0.3-0.4,0.3-0.6c0.1-0.3,0-0.5-0.1-0.7L4.7,0.5C4.6,0.4,4.5,0.3,4.3,0.2C4.2,0.1,4,0,3.9,0    C3.6,0,3.4,0.1,3.2,0.3L0.5,3C0.4,3.1,0.3,3.2,0.2,3.4C0.1,3.6,0.1,3.8,0,4c0,0,0,0.2,0,0.4c0,0.2,0,0.6,0.1,1    c0.1,0.4,0.2,0.9,0.4,1.5c0.2,0.6,0.5,1.2,0.8,2c0.4,0.7,0.9,1.5,1.5,2.3c0.6,0.8,1.4,1.7,2.3,2.7c1.2,1.2,2.3,2.1,3.3,2.8    c1,0.7,2,1.2,2.8,1.5c0.8,0.3,1.5,0.6,2.1,0.6c0.6,0.1,1,0.1,1.2,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.1,0c0.2,0,0.4-0.1,0.6-0.2    c0.2-0.1,0.4-0.2,0.5-0.3l2.7-2.7c0.2-0.2,0.3-0.5,0.3-0.8C18.9,14.7,18.8,14.5,18.5,14.3z"/>
+														</g>
 													</g>
-												</g>
-											</svg>
+												</svg>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="form-item">
-									<div class="form-item__title">Телефон:</div>
-									<div class="form-item__input">
-										<input type="text" value="89215674566" />
-										<div class="form-item__input-icon form-item--icon-phone">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
-												<g id="Forma_1">
-													<g>
-														<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCDCDC" d="M18.5,14.3L14.6,12h0c-0.1-0.1-0.3-0.1-0.5-0.1    c-0.3,0-0.6,0.1-0.8,0.3l-1.1,1.2c0,0-0.1,0-0.1,0.1s-0.1,0-0.1,0l-0.3-0.1c-0.2,0-0.4-0.1-0.7-0.3c-0.3-0.2-0.7-0.4-1.2-0.8    c-0.5-0.3-1-0.8-1.6-1.4c-0.6-0.6-1.1-1.1-1.4-1.6C6.3,8.9,6,8.5,5.9,8.2c-0.2-0.4-0.3-0.7-0.4-1c0,0,0-0.1,0-0.2    c0-0.1,0-0.1,0.1-0.1l1-1c0.2-0.2,0.3-0.4,0.3-0.6c0.1-0.3,0-0.5-0.1-0.7L4.7,0.5C4.6,0.4,4.5,0.3,4.3,0.2C4.2,0.1,4,0,3.9,0    C3.6,0,3.4,0.1,3.2,0.3L0.5,3C0.4,3.1,0.3,3.2,0.2,3.4C0.1,3.6,0.1,3.8,0,4c0,0,0,0.2,0,0.4c0,0.2,0,0.6,0.1,1    c0.1,0.4,0.2,0.9,0.4,1.5c0.2,0.6,0.5,1.2,0.8,2c0.4,0.7,0.9,1.5,1.5,2.3c0.6,0.8,1.4,1.7,2.3,2.7c1.2,1.2,2.3,2.1,3.3,2.8    c1,0.7,2,1.2,2.8,1.5c0.8,0.3,1.5,0.6,2.1,0.6c0.6,0.1,1,0.1,1.2,0.1c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.1,0c0.2,0,0.4-0.1,0.6-0.2    c0.2-0.1,0.4-0.2,0.5-0.3l2.7-2.7c0.2-0.2,0.3-0.5,0.3-0.8C18.9,14.7,18.8,14.5,18.5,14.3z"/>
-													</g>
-												</g>
-											</svg>
-										</div>
+									<div class="cost__result">
+										<div class="cost__result-title">Стоимость:</div>
+										<div class="cost__result-price">9000 Р</div>
+										<button type="submit" class="btn right">Полетели!</button>
 									</div>
-								</div>
-								<div class="cost__result">
-									<div class="cost__result-title">Стоимость:</div>
-									<div class="cost__result-price">9000 Р</div>
-									<button type="submit" class="btn right">Полетели!</button>
-								</div>
-							</form>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -375,20 +396,20 @@
 					<div class="border-top">
 						<div class="row">
 							<div class="faq row__col row--col-12-6 adaptive">
-								<h2 class="page-title page-title--marg-bott-min page-title--padd-top">Частые вопросы<div class="page-title__line"></div></h2>
+								<h2 class="page-title page-title--marg-bott-min page-title--padd-top">Частые вопросы<span class="page-title__line"></span></h2>
 								<div class="faq__items">
 									<div class="faq__item active">
 										<div class="faq__title">
 											<div class="faq__arrow">
-												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="0,0 5,8 10,0   "/>
 														</g>
 													</g>
 												</svg>
-												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="5,0 0,8 10,8   "/>
 														</g>
@@ -402,15 +423,15 @@
 									<div class="faq__item">
 										<div class="faq__title">
 											<div class="faq__arrow">
-												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="0,0 5,8 10,0   "/>
 														</g>
 													</g>
 												</svg>
-												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="5,0 0,8 10,8   "/>
 														</g>
@@ -424,15 +445,15 @@
 									<div class="faq__item">
 										<div class="faq__title">
 											<div class="faq__arrow">
-												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="0,0 5,8 10,0   "/>
 														</g>
 													</g>
 												</svg>
-												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="5,0 0,8 10,8   "/>
 														</g>
@@ -446,15 +467,15 @@
 									<div class="faq__item">
 										<div class="faq__title">
 											<div class="faq__arrow">
-												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="0,0 5,8 10,0   "/>
 														</g>
 													</g>
 												</svg>
-												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Polygon_2_1_" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
-													<g id="Polygon_2">
+												<svg class="up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 10 8" enable-background="new 0 0 10 8" xml:space="preserve">
+													<g>
 														<g>
 															<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#AEAEAE" points="5,0 0,8 10,8   "/>
 														</g>
@@ -468,7 +489,7 @@
 								</div>
 							</div>
 							<div class="row__col row--col-12-6 adaptive">
-								<h2 class="page-title page-title--marg-bott-min page-title--padd-top">Способы оплаты<div class="page-title__line"></div></h2>
+								<h2 class="page-title page-title--marg-bott-min page-title--padd-top">Способы оплаты<span class="page-title__line"></span></h2>
 								<div class="tabs">
 									<ul class="tabs__list-wrap">
 										<li class="tabs__list tabs--list-active"><a href="#tab-1" class="tabs__list-link">Наличными</a></li>
@@ -500,32 +521,32 @@
 				</div>
 			</section>
 
-			<section class="statistics">
+			<div class="statistics">
 				<div class="page-content-inner">
 					<div class="statistics__inner">
 						<div class="statistics__item">
 							<div class="statistics__item-count">700</div>
-							<div class="statistics__item-text">Полетов<span>&nbsp</span>в год</div>
+							<div class="statistics__item-text">Полетов<span>&nbsp;</span>в год</div>
 						</div>
 						<div class="statistics__item">
 							<div class="statistics__item-count">3000</div>
-							<div class="statistics__item-text">Средняя<span>&nbsp</span>дальность в метрах</div>
+							<div class="statistics__item-text">Средняя<span>&nbsp;</span>дальность в метрах</div>
 						</div>
 						<div class="statistics__item">
 							<div class="statistics__item-count">3</div>
-							<div class="statistics__item-text">Воздушных<span>&nbsp</span>шара</div>
+							<div class="statistics__item-text">Воздушных<span>&nbsp;</span>шара</div>
 						</div>
 						<div class="statistics__item">
 							<div class="statistics__item-count">12</div>
-							<div class="statistics__item-text">Человек<span>&nbsp</span>в команде</div>
+							<div class="statistics__item-text">Человек<span>&nbsp;</span>в команде</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<section class="team">
+			<section class="team" id="team">
 				<div class="page-content-inner">
-					<h2 class="page-title page-title--marg-bott-max page-title--padd-top page-title--center">Команда инструкторов<div class="page-title__line"></div></h2>
+					<h2 class="page-title page-title--marg-bott-max page-title--padd-top page-title--center">Команда инструкторов<span class="page-title__line"></span></h2>
 					<div class="team__inner">
 						<div class="team__item">
 							<div class="team__item-img">
@@ -533,8 +554,8 @@
 									<img src="img/instructor_1.jpg" alt="Мария Мариева" />
 								</div>
 								<div class="team__icon team--icon-glasses">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
-										<g id="Forma_1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M52.5,6.7h-1c0-0.1,0-0.1,0-0.2c-1.1-3.6-4.3-5.2-7.1-5.7    c-1.2-0.4-3.7-0.5-7-0.5V0H15.9v0.2c-3.4,0-6,0.1-7.2,0.5c-2.8,0.5-6,2.1-7.1,5.7c0,0.1,0,0.1,0,0.2h-1C0.2,6.7,0,6.9,0,7.2v0.9    c0,0.3,0.2,0.5,0.5,0.5h0.8C1.4,11,2,14.5,3.8,17c2.1,2,4.3,3,7,3c4.6,0,9.2-2.8,10.7-5.4c1-1.7,2.2-3.6,2.6-4.9l0.1-0.2    c0.2-0.5,0.4-0.8,0.5-1.2c0.1-0.5,0.1-1.2,0.1-1.8h3.5c0,0.6,0,1.3,0.1,1.8c0.1,0.4,0.3,0.7,0.5,1.2l0.1,0.2    c0.4,1.3,1.5,3.1,2.6,4.9C33,17.2,37.6,20,42.2,20c2.7,0,4.9-1,7-3c1.8-2.5,2.4-5.9,2.5-8.3h0.8c0.3,0,0.5-0.2,0.5-0.5V7.2    C53,6.9,52.8,6.7,52.5,6.7z M31,1.6L29,3.2c-0.2,0.3-0.3,0.8-0.5,1.4h-4C24.4,4,24.2,3.5,24,3.2L22,1.6c-0.1,0-0.8-0.5-1.3-0.9    h11.7C31.8,1.1,31.1,1.6,31,1.6z"/>
 											</g>
@@ -553,8 +574,8 @@
 									<img src="img/instructor_2.jpg" alt="Надежда Надеждова" />
 								</div>
 								<div class="team__icon team--icon-glasses">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
-										<g id="Forma_1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M52.5,6.7h-1c0-0.1,0-0.1,0-0.2c-1.1-3.6-4.3-5.2-7.1-5.7    c-1.2-0.4-3.7-0.5-7-0.5V0H15.9v0.2c-3.4,0-6,0.1-7.2,0.5c-2.8,0.5-6,2.1-7.1,5.7c0,0.1,0,0.1,0,0.2h-1C0.2,6.7,0,6.9,0,7.2v0.9    c0,0.3,0.2,0.5,0.5,0.5h0.8C1.4,11,2,14.5,3.8,17c2.1,2,4.3,3,7,3c4.6,0,9.2-2.8,10.7-5.4c1-1.7,2.2-3.6,2.6-4.9l0.1-0.2    c0.2-0.5,0.4-0.8,0.5-1.2c0.1-0.5,0.1-1.2,0.1-1.8h3.5c0,0.6,0,1.3,0.1,1.8c0.1,0.4,0.3,0.7,0.5,1.2l0.1,0.2    c0.4,1.3,1.5,3.1,2.6,4.9C33,17.2,37.6,20,42.2,20c2.7,0,4.9-1,7-3c1.8-2.5,2.4-5.9,2.5-8.3h0.8c0.3,0,0.5-0.2,0.5-0.5V7.2    C53,6.9,52.8,6.7,52.5,6.7z M31,1.6L29,3.2c-0.2,0.3-0.3,0.8-0.5,1.4h-4C24.4,4,24.2,3.5,24,3.2L22,1.6c-0.1,0-0.8-0.5-1.3-0.9    h11.7C31.8,1.1,31.1,1.6,31,1.6z"/>
 											</g>
@@ -573,8 +594,8 @@
 									<img src="img/instructor_3.jpg" alt="Ирина Иринова" />
 								</div>
 								<div class="team__icon team--icon-phone">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 18 42" enable-background="new 0 0 18 42" xml:space="preserve">
-										<g id="Forma_1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 18 42" enable-background="new 0 0 18 42" xml:space="preserve">
+										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M16.1,14h-0.4v-1.8c0-0.9-0.8-1.7-1.7-1.7    c-0.9,0-1.7,0.8-1.7,1.7V14H4.9V1.4C4.9,0.6,4.3,0,3.6,0C2.8,0,2.2,0.6,2.2,1.4V14H1.9C0.9,14,0,14.9,0,15.9v24.1    C0,41.1,0.9,42,1.9,42h14.1c1.1,0,1.9-0.9,1.9-1.9V15.9C18,14.9,17.1,14,16.1,14z M14.8,25.7H3.2v-2.4h11.6V25.7z M14.9,20.6H3.3    v-2.4h11.6V20.6z"/>
 											</g>
@@ -593,8 +614,8 @@
 									<img src="img/instructor_4.jpg" alt="Алена Аленова" />
 								</div>
 								<div class="team__icon team--icon-wrench">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
-										<g id="Forma_1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M34.7,7.6c-0.2-0.7-1.1-1-1.6-0.4l-4.2,4.2    c-0.9,0.9-2.5,0.9-3.4,0l-1.9-1.9c-0.9-0.9-0.9-2.5,0-3.4l4.2-4.2c0.5-0.5,0.3-1.4-0.5-1.6c-1-0.2-2-0.3-3.1-0.2    c-4.6,0.4-8.9,4.7-9.2,9.3c-0.1,1.8,0.2,3.4,0.9,4.9L1.1,26.9C0.4,27.5,0,28.3,0,29.2c0,0.9,0.3,1.7,0.9,2.3l2.5,2.5    C4,34.7,4.9,35,5.8,35c0.9,0,1.7-0.4,2.3-1.1l12.8-14.8c1.4,0.6,3,1,4.7,0.9c4.7-0.3,9-4.6,9.4-9.2C35.1,9.6,35,8.6,34.7,7.6z"/>
 											</g>
@@ -613,7 +634,7 @@
 
 			<section class="reviews padd-bott-100">
 				<div class="page-content-inner">
-					<h2 class="page-title page-title--padd-top page-title--center">Отзывы<div class="page-title__line"></div></h2>
+					<h2 class="page-title page-title--padd-top page-title--center">Отзывы<span class="page-title__line"></span></h2>
 					<div class="reviews__slider">
 						<div class="bxslider-reviews">
 							<div class="reviews__slider-item">
@@ -649,11 +670,11 @@
 				</div>
 			</section>
 
-			<section class="contacts">
+			<div class="contacts" id="contacts">
 				<div class="page-content-inner">
 					<div class="contacts__icon">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 41 40" enable-background="new 0 0 41 40" xml:space="preserve">
-							<g id="Forma_1">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 40" enable-background="new 0 0 41 40" xml:space="preserve">
+							<g>
 								<g>
 									<path fill="#F3F3F3" d="M40.2,1.3c-1.2-1.5-3.4-1.7-4.8-0.5L25.8,9L5.3,1.6l-3.5,3l16,11.1L8.2,24l-5.5-1.5L0,24.8l6.9,5l3.3,8    l2.6-2.3l-0.3-6l9.7-8.3L29.5,40l3.5-3l-2.9-22.4l9.7-8.3C41.2,5.2,41.4,2.8,40.2,1.3z"/>
 								</g>
@@ -666,8 +687,8 @@
 						<div class="row__col row--col-12-4 adaptive adaptive--50">
 							<div class="contacts__item">
 								<div class="contacts__item-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 35 50" enable-background="new 0 0 35 50" xml:space="preserve">
-										<g id="Forma_1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 35 50" enable-background="new 0 0 35 50" xml:space="preserve">
+										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#1C5978" d="M17.5,0C7.8,0,0,7.9,0,17.5c0,0.7,0.1,1.5,0.1,2.2    c1.5,13.7,16.2,29.5,16.2,29.5c0.3,0.3,0.5,0.5,0.8,0.6l0,0l0.5,0.2l0.5-0.2l0,0c0.2-0.1,0.5-0.3,0.8-0.6c0,0,14.5-15.8,16-29.5    c0.1-0.7,0.1-1.4,0.1-2.2C35,7.9,27.2,0,17.5,0z M17.5,28.8c-6.2,0-11.3-5.1-11.3-11.3c0-6.2,5.1-11.3,11.3-11.3    c6.2,0,11.3,5.1,11.3,11.3C28.8,23.8,23.7,28.8,17.5,28.8z"/>
 											</g>
@@ -684,8 +705,8 @@
 						<div class="row__col row--col-12-4 adaptive adaptive--50">
 							<div class="contacts__item">
 								<div class="contacts__item-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 35 50" enable-background="new 0 0 35 50" xml:space="preserve">
-										<g id="Forma_1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 35 50" enable-background="new 0 0 35 50" xml:space="preserve">
+										<g>
 											<g>
 												<path fill-rule="evenodd" clip-rule="evenodd" fill="#1C5978" d="M17.5,0C7.8,0,0,7.9,0,17.5c0,0.7,0.1,1.5,0.1,2.2    c1.5,13.7,16.2,29.5,16.2,29.5c0.3,0.3,0.5,0.5,0.8,0.6l0,0l0.5,0.2l0.5-0.2l0,0c0.2-0.1,0.5-0.3,0.8-0.6c0,0,14.5-15.8,16-29.5    c0.1-0.7,0.1-1.4,0.1-2.2C35,7.9,27.2,0,17.5,0z M17.5,28.8c-6.2,0-11.3-5.1-11.3-11.3c0-6.2,5.1-11.3,11.3-11.3    c6.2,0,11.3,5.1,11.3,11.3C28.8,23.8,23.7,28.8,17.5,28.8z"/>
 											</g>
@@ -703,8 +724,8 @@
 							<div class="contacts__links">
 								<div class="contacts__mail">
 									<div class="contacts__mail-icon">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 23 17" enable-background="new 0 0 23 17" xml:space="preserve">
-											<g id="Forma_1">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 23 17" enable-background="new 0 0 23 17" xml:space="preserve">
+											<g>
 												<g>
 													<path fill-rule="evenodd" clip-rule="evenodd" fill="#1C5978" d="M21.5,0.4C21.1,0.1,20.6,0,20.1,0H2.9c-0.5,0-1,0.1-1.4,0.4    l10,8.6L21.5,0.4z M0.4,1.3C0.2,1.8,0,2.3,0,2.8v11.3c0,0.5,0.1,1,0.4,1.4l7.3-8L0.4,1.3z M12,10.5c-0.1,0.1-0.3,0.2-0.5,0.2    s-0.3-0.1-0.5-0.2l-2.3-2l-7.4,8.1c0.4,0.3,1,0.4,1.5,0.4h17.3c0.6,0,1.1-0.2,1.5-0.4l-7.4-8.1L12,10.5z M22.6,1.3l-7.2,6.2l7.3,8    c0.2-0.4,0.4-0.9,0.4-1.4V2.8C23,2.3,22.8,1.8,22.6,1.3z"/>
 												</g>
@@ -723,38 +744,38 @@
 					</div>
 				</div>
 				<div class="contacts__corner contacts--corner-l">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_21_xA0_Изображение_1_" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
-						<image overflow="visible" width="800" height="121" id="Layer_21_xA0_Изображение" xlink:href="data:image/png;base64,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 /wswAFhOO9w3+8xwAAAAAElFTkSuQmCC">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
+						<image overflow="visible" width="800" height="121" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAB5CAYAAADBGUXKAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACFRJREFUeNrs3elqJMcSgNEQ3Pd/ PduXplchIWm0r73p3sgpSe6uShuyGLyeA4Vmftgexwy2PrKj8uR/KQAAAH6cdT6TfH7J578fz8/l 63/MBgAAGGl1EBi/HATH4uTkZF/7C06cgAAAAL/jIXqnGJ9PRsZz699MgAAAALt8ZnF8ivH9VCMj 4/xH/oMECAAA/Htc9SKjfC2nGtMMje0f8QsQIAAA8M/yFgcfkzoMjoyM2z/7FydAAADg76d8D7+M +m7GMkPj/a/6CxcgAADw13UXwzdMfS6Av/4d/4UECAAA/LnK7sU0em+YKj/PyLj8p/3LChAAAPhj XPQi43MBfJahsfu3DEGAAADAj/MSvVOM+PUjU/fGI0AAAKBVWfBeRH03Y5Wh4ftrAQIAAM1uonL7 d3SnGWvjESAAANBqk88kerd/R3cD+DfjESAAADDGWS8yPk81ygL43ngECAAAtHqKyu3f0X1k6tF4 BAgAALQqpxXzqOxmZGScGo8AAQCAMcr+Rf8NU+XHkwyNjfEIEAAAaLWO3tul4uNUIyPjxngECAAA jLGK+m7GwgK4AAEAgDEeonL7d3SnGc/GgwABAKDVLp9ZVHYzMjLOjQcBAgDAGJcxvP27/HyaobE1 HgQIAACt3qJy+3d0H5m6Mx4ECAAArcr3ecuo72YsMzTejQgBAgBAq7uo3P4d3WnGq/EgQAAAaFV2 L6ZR2c3IyLg0HgQIAABjlLdJ1XYzZhkaO+NBgAAA0OrlIC6OdjMyMh6MBwECAECrsuC9iPpuxipD w/dgCBAAAJrdROX27+hOM9bGAwIEAKDVJp9JVHYzMjK+GQ8IEACAMU5jePt3+TrP0NgbDwgQAIBW T73A+DrVyMh4Mh4QIAAArcppxTwquxkZGafGAwIEAGCMsn/Rf8NU+fEkQ2NjPCBAAABaraP3dqn4 ONXIyLgxHhAgAACtyvcjqxje/l1+vMjQeDciECAAAK0eYviGqe+hkZHxYjwgQAAAWu3ymUVlNyMj 49x4QIAIEABgjMsY3v5dfj7N0NgaDyBAAIBWr73A+DrVyMi4Mx5AgAAArcqC9zKGuxnlWWZo+F4B ECAAQLO7GL5h6nM34814AAECALQquxfTqOxmZGRcGg8gQACAMcrbpPq3f5dnlqGxMx5AgAAArZ6j cvt3dAvgD8YDCBAAoNU+n0VUdjMyMlbGAwgQAGCMmxi+YeozNNbGAwgQAKDVJp9JVHYzMjK+GQ+A AAGAMU6jvpsxz9DYGw+AAAGAVo9Ruf07uo9MPRkPgAABgFbltGIWw92M8pGpM+MBECAAMEbZvxjc /p3PJENjYzwAAgQAWq2j93ap+DjVyMi4MR4AAQIArcr/s1ZR381YZGi8GxGAAAGAVvdRuf07utOM F+MBECAA0GoX3QJ4CYzD3YyfMzIujAdAgADAGJcxvP27/HyaobE1HgABAgCtXnuB8bWbkZFxZzwA CBAAWpUF72XUdzOWGRr+fwKAAAGg2W1Ubv+O7jTjzXgAECAAtCq7F9M4XgD/HhwZGVfGA4AAAWCM 8xje/l2eWYbGzngAECAAtHqOyu3f0X1k6sF4ABAgALTa57OIym5GRsbKeAAQIACMcR3DN0yV2Jhk aKyNBwABAkCrTQmKOF7+/h4cGRnXxgOAAAFgjNOo72bMMzT2xgOAAAGg1WNUbv+O7jTjyXgAQIAA tCqvq51HZTcjI+PMeABAgACMUS7g69/+XYJjmqGxMR4AECAArdZxvJdxuAB+azwAIEAAWpX/rq2i vpuxyNB4NyIAECAAre6jcvt3dKcZL8YDAAIEoNU2n1lUdjMyMi6MBwAECMAYJSb6t3+XZ5ahsTUe ABAgAK1e47cXwO+NBwAECECrsuC9jPpuxjJDw39zAECAADS7jcrt39GdZrwZDwAgQIBW5fK9aVR2 MzIyrowHABAgwBhnMbz9u3ydZ2jsjAcAECBAq+c4XgD/OtXIyHgwHgBAgACt9vksorKbkZGxMh4A QIAAY1zH8A1TJTYmGRpr4wEABAjQqoTEJCq7GRkZ18YDAAgQYIzTg8g4/NjUIkNjbzwAgAABWj1G 7zW28etuxpPxAAACBGhVXlc7j8puRkbGmfEAAAgQGKNcwNe//bsExzRDY2M8AAACBFq9xfGdGV/B kZFxazwAAAIEWpU/+6uDwDj82NQyQ+PdiAAABAi0uo/K7d/RnWa8GA8AgACBVtt8ZlHZzcjIuDAe AAABAmOUmOjf/l2eWYbG1ngAAAQItHqJ4wXwr+DIyLg3HgAAAQKtyoL3MuoL4KsMDX8uAQAECDS7 jcrt39GdZrwZDwCAAIFW5fK9aVR2MzIyrowHAAABwhhnMbz9u3ydZ2jsjAcAAAFCq6eo3P4d3Uem Ho0HAAABQqt9PouoLIBnZJwaDwAAAoQxrmN4+3cJjkmGxtp4AAAQILQqITGJym5GRsa18QAAIEAY YxX13YxFhsbeeAAAECC0eojK7d/RnWY8Gw8AAAKEVuV1tfNeZHzemXFuPAAACBDGuIrh7d8lOKYZ GhvjAQBAgNDq7SAujnYzMjJujQcAAARIqzKfZdR3M5YZGu9GBAAAAqTVXVRu/47uNOPVeAAAQIC0 2uYzq0TGTxkZl/44AACAABnjIoa3f5dnlqGx9dsOAAACpNVLHC+AfwVHRsa931oAABAgrcqC9yLq uxmrDA37KwAAIECa3UTl9u/oTjPWfpsAAECAtCqX702jspuRkXHltwIAAATIGGcxvP27fJ1naOyM HAAABEirp6jc/h3dR6YejRUAAGgNkH0+86jsZmRknBodAAAwJkC+fQTG4cemyo8nGRobIwIAAH6U /wswAFhOO9w3+8xwAAAAAElFTkSuQmCC">
 						</image>
 					</svg>
 				</div>
 				<div class="contacts__corner contacts--corner-r">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_21_xA0_Изображение_1_" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
-						<image overflow="visible" width="800" height="121" id="Layer_21_xA0_Изображение" xlink:href="data:image/png;base64,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">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 800 121" enable-background="new 0 0 800 121" xml:space="preserve">
+						<image overflow="visible" width="800" height="121" xlink:href="data:image/png;base64,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">
 						</image>
 					</svg>
 				</div>
-			</section>
+			</div>
 	    </main>
 		<header class="page-header">
 			<div class="page-content-inner">
 				<div class="page-header__inner">
-					<div class="page-logo">Монгольфьеркин и КО</div>
+					<a href="/" class="page-logo">Монгольфьеркин и КО</a>
 					<nav class="main-nav">
 						<ul class="main-nav__list">
-							<li class="main-nav__item main-nav--item-active"><a href="">Кто мы</a></li>
-							<li class="main-nav__item"><a href="">Фотографии</a></li>
-							<li class="main-nav__item"><a href="">План полета</a></li>
-							<li class="main-nav__item"><a href="">Заказать</a></li>
-							<li class="main-nav__item"><a href="">Команда</a></li>
-							<li class="main-nav__item"><a href="">Контакты</a></li>
+							<li class="main-nav__item main-nav--item-active" data-link="about"><a href="#about" class="js-ancLinks">Кто мы</a></li>
+							<li class="main-nav__item" data-link="gallery"><a href="#gallery" class="js-ancLinks">Фотографии</a></li>
+							<li class="main-nav__item" data-link="flying"><a href="#flying" class="js-ancLinks">План полета</a></li>
+							<li class="main-nav__item" data-link="cost"><a href="#cost" class="js-ancLinks">Заказать</a></li>
+							<li class="main-nav__item" data-link="team"><a href="#team" class="js-ancLinks">Команда</a></li>
+							<li class="main-nav__item" data-link="contacts"><a href="#contacts" class="js-ancLinks">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 			<a class="scrollTop" href="#" style="display:none;">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Forma_1_1_" x="0px" y="0px" viewBox="0 0 42 26" enable-background="new 0 0 42 26" xml:space="preserve">
-					<g id="Forma_1">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 42 26" enable-background="new 0 0 42 26" xml:space="preserve">
+					<g>
 						<g>
 							<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#E3E3E3" points="21,0 0,21.1 4.9,26 21,9.8 37.1,26 42,21.1   "/>
 						</g>
